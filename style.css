@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+div {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 0.5fr;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    color: #0A3871;
+    background: #fcfcfc;
+    text-align: center;
+    padding: 0 0 150px 0;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.container-l {
+    padding: 0;
+    width: 60%;
+    text-align: left;
+    margin: auto;
+    border-left: 4px solid #0A3871;
+
+}
+
+.bottoms {
+    padding: 0;
+    display: inline-block;
+}
+
+.letra {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+button:nth-child(1) {
+    margin: 10px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #0A3871;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:nth-child(2) {
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #D8DFE8;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:nth-child(3) {
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #D8DFE8;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+button:nth-child(1):hover {
+    background-color: #004dab;
+    transition: background-color 0.5s;
+}
+
+button:nth-child(2):hover {
+    background-color: #cccccc;
+    transition: background-color 0.5s;
+}
+.container-img:nth-child(1){
+    max-width: 55%;
+    margin: auto;
+}
+.container-img:nth-child(3){
+    max-width: 100%;
+    margin: auto;
+}
+img{
+    padding: 5px 0 0 0;
+    width: 80%;
+    object-fit: cover;
+}
+span{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub{
+    color: #929292;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
