@@ -5,39 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="IMG/logo.png">
-    <title>Desafio Encriptador</title>
+    <title>Encriptador</title>
 </head>
 
 <body>
-
     <div class="container">
-        <div>
+        <div class="container-div">
             <textarea id="texto" name="texto" cols="30" rows="10" placeholder="Ingrese el texto"></textarea>
-            <div class="container-l">
-                <p class="letra"> Solo letras minusculas y sin acento</p>
+            <div class="container-information">
+                <p>Solo letras minusculas y sin acento</p>
             </div>
             <div class="bottoms">
-                <button onclick="encriptar();">Encriptar</button>
-                <button onclick=" desencriptar();">Desencriptar</button>
+                <button class="boton" type="button" onclick="encriptar();">Encriptar</button>
+                <button class="boton" type="button" onclick=" desencriptar();">Desencriptar</button>
             </div>
         </div>
-        <div>
+        <div class="container-div">
             <div class="container-img">
                 <img src="IMG/img.PNG" alt="">
-            </div>
-            <br>
-            <div class="container-img">
                 <textarea name="texto_ecriptar" id="titulo" cols="20" rows="1" readonly="readonly"></textarea>
-
-                <p id="parrafo" class="sub">Ingresa el texto que desees encriptar o desencriptar</p>
-                <button id="miEtiqueta" onclick="copiar();">Copiar</button>
             </div>
+            <p id="parrafo" class="sub">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button class="boton" id="miEtiqueta" onclick="copiar();">Copiar</button>
         </div>
     </div>
     <script src="js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 </body>
 
 </html>
